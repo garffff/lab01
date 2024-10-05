@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int a0, b0, c0, a1, b1, c1;
+    cin >> a0 >> b0 >> c0 >> a1 >> b1 >> c1;
+    int sum = (a1 - a0) * 3600 + (b1 - b0) * 60 + c1 - c0;
+    cout << sum / 3600 << " hours " << (sum % 3600) / 60 << " minutes " << sum % 60 << " seconds ";
+    return 0;
+}
